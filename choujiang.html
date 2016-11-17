@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>抽奖</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			html,
+			body {
+				height: 100%;
+				background: #000;
+			}
+			
+			img {
+				display: block;
+			}
+			
+			button {
+				border: none;
+				background: none;
+			}
+			
+			.mui-content {
+				position: relative;
+				background: #000;
+			}
+			
+			.bj {
+				width: 100%;
+			}
+			
+			.cj {
+				height: 21%;
+				width: 100%;
+				position: absolute;
+				z-index: 2;
+				top: 0;
+			}
+			
+			.cj input {
+				width: 64%;
+				position: absolute;
+				top: 42%;
+				left: 10%;
+				border-radius: 10px;
+				background: none;
+				color: #fff;
+			}
+			/*知道了按钮*/
+			.btn {
+				width: 15%;
+				height: 45%;
+				border-radius: 50%;
+				position: absolute;
+				top: 34%;
+				right: 7%;
+				background: none;
+				border: none;
+				display: none;
+			}
+			
+			.jiangpin {
+				position: absolute;
+				top: 22%;
+				width: 100%;
+				height: 30%;
+			}
+			
+			.jiangpin .jp {
+				width: 80%;
+				height: 100%;
+				margin: 0 auto;
+				z-index: 2;
+			}
+			
+			.jiangpin .jp div img {
+				width: 100%;
+			}
+			
+			.jiangpin .wcj {
+				
+			}
+			
+			.jiangpin .zdl_btn {
+				width: 21%;
+				height: 18%;
+				position: absolute;
+				left: 50%;
+				bottom: 10%;
+				transform: translateX(-50%);
+				background: none;
+			}
+			
+			.wzj {
+				display: none;
+			}
+			
+			.zjl {
+				padding-top: 4%;
+				display: none;
+			}
+			
+			.zjjp {
+				width: 40%;
+				background: #fff;
+				height: 40%;
+				position: absolute;
+				top: 28%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		</style>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<img src="images/cj_bg_02.jpg" class="bj" />
+			<div class="cj">
+				<!--手机号码-->
+				<input type="text" placeholder="请输入手机号码" />
+				<!--抽奖按钮-->
+				<button class="btn"></button>
+			</div>
+			<div class="jiangpin">
+				<button class="zdl_btn"></button>
+				<div class="jp">
+					<!--未抽奖-->
+					<div class="wcj">
+						<img src="images/cj01.png" />
+					</div>
+					<!--未中奖-->
+					<div class="wzj">
+						<img src="images/cj02.png" />
+					</div>
+					<!--中奖了-->
+					<div class="zjl">
+						<img src="images/cj03.png" />
+						<!--奖品-->
+						<div class="zjjp">
+							<img src="images/jp01.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

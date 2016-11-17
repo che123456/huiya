@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-content {
+				
+				background: #fff;
+			}
+			.title{padding: 5% 5% 0;}
+			.title h2 {
+				font-size: 1.2rem;
+				font-weight: 400;
+				margin-bottom: 1rem;
+				line-height: 1.5rem;
+			}
+			
+			.title time {
+				color: #989898;
+			}
+			
+			.pic {
+				width: 100%;
+				padding: 1.5rem 0;
+				height: 12rem;
+				position: relative;
+				margin-bottom: 2rem;
+				 overflow: hidden;
+			}
+			
+			.pic img {
+				width: 70%;
+				margin: 0 auto;
+				display: block;
+			}
+			
+			.mui-ellipsis {
+				color: #000;
+			}
+			
+			.mui-table-view-cell:after {
+				left: 0;
+			}
+			
+			.mui-table-view-cell a {
+				height: 6rem;
+			}
+			
+			.mui-table-view-cell a h2 {
+				font-size: 1rem;
+				line-height: 2rem;
+				font-weight: 500;
+			}
+			
+			.mui-media-object {
+				height: 4.5rem !important;
+				max-width: 6rem !important;
+			}
+			.mui-table-view:before{
+				height: 20px !important;
+				top: -13px;
+				background: #efeff4;
+			}
+			.footer{text-align: center;line-height: 2rem;font-weight: 600;}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="mui-content">
+			<!--新闻标题-->
+			<div class="title">
+				<h2><a href="#">特朗普当选美国总统 希拉里今晚不发表败选演说</a></h2>
+				<time>2016.11.11</time>
+			</div>
+			<!--新闻图片-->
+			<div class="pic">
+				<a href="#">
+					<img src="images/news01.jpg" />
+				</a>				
+			</div>
+			
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="news.html">
+						<img class="mui-media-object mui-pull-left" src="images/list01.jpg">
+						<div class="mui-media-body">
+							<h2 class='mui-ellipsis'>TGO促销季，十一月狂欢，嗨购不停</h2>
+							<p>2016.11.11</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="images/list02.jpg">
+						<div class="mui-media-body">
+							<h2 class='mui-ellipsis'>习近平致电特普朗，祝贺其当选美国总统</h2>
+							<p>2016.11.11</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<p class="footer">无更多新闻内容</p>
+	</body>
+
+</html>
